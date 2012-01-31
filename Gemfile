@@ -7,6 +7,11 @@ gem 'rails', '3.2.1'
 
 gem 'mysql2'
 
+gem 'kaminari'
+gem 'devise'
+#gem 'unicorn'
+#gem 'capistrano'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +23,11 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'rspec'
+  gem 'rspec-rails'
 end
 
 gem 'jquery-rails'
